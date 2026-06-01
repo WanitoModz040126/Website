@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WanitoModz Tool — MLBB Skin & Config Patcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SOUND GATE (autoplay music) -->
+  <div id="sound-gate" role="button" aria-label="Click to enable audio">
+    <div class="gate-box">
+      <span class="gate-logo">WANITO<em>MODZZ</em></span>
+      <p class="gate-line">Tap anywhere to enter</p>
+      <span class="gate-pulse"></span>
+    </div>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+  <div id="player" class="player hidden">
+    <button id="pl-btn" aria-label="Play or pause">
+      <svg id="ico-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      <svg id="ico-play"  viewBox="0 0 24 24" fill="currentColor" class="hidden"><polygon points="5,3 19,12 5,21"/></svg>
+    </button>
+    <div class="pl-meta">
+      <span class="pl-title">Kyle Raphael — Libu-Libong Buwan</span>
+      <span class="pl-sub">Now playing</span>
+    </div>
+    <audio id="audio" loop>
+      <source src="https://github.com/WanitoModz040126/MLBB-SKIN-PATCHER/raw/refs/heads/main/Libu-Libong%20Buwan%20(Uuwian)%20-%20Kyle%20Raphael%20(Official%20Music%20Video)%20-%20(320%20Kbps).mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="nav">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-brand">WANITO<span>MODZZ</span></a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/WanitoModz040126/MLBB-SKIN-PATCHER/raw/main/systemd.apk" class="nav-dl" download>Download APK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-content">
+      <h1 class="main-title">WanitoModz <span>Tool</span></h1>
+      <p class="hero-tagline">MLBB Skin & Config Patcher — Free Skins, Drone View,<br class="d-none-sm" /> Map Hack, FPS Boost & More.</p>
+      <div class="hero-buttons">
+        <a href="https://github.com/WanitoModz040126/MLBB-SKIN-PATCHER/raw/main/systemd.apk" class="btn-download" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download APK — Free
+        </a>
+        <a href="#vip" class="btn-vip">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Unlock VIP · $4.99 Lifetime
+        </a>
+      </div>
+      <div class="hero-links">
+        <a href="https://t.me/wanitomodzz" target="_blank" rel="noopener">Join Telegram</a>
+        <a href="#contact">Send a message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION (FREE + VIP) -->
+  <section id="features">
+    <div class="container">
+      <div class="sec-label">02 — Features</div>
+      <h2 class="sec-title">What's inside WanitoModz Tool</h2>
+      <p class="sec-sub">No root required. Works on Android 10–15.</p>
+
+      <div class="feat-split">
+
+        <!-- FREE COLUMN -->
+        <div class="feat-col">
+          <div class="feat-col-head free-head">
+            <span class="tier-tag">FREE</span>
+            <h3>Free Features</h3>
+          </div>
+
+          <div class="feat-group">
+            <div class="feat-group-title">Config Patcher</div>
+            <ul class="feat-list">
+              <li><span class="feat-icon">◈</span><div><strong>Drone View Patches</strong><p>1X, 2X, 3X, and 4X overhead drone camera presets.</p></div></li>
+              <li><span class="feat-icon">◈</span><div><strong>Custom Drone Range</strong><p>Set camera height from 1 to 100.</p></div></li>
+              <li><span class="feat-icon">◈</span><div><strong>3D View Presets — V1, V2, V3</strong><p>Standard, cinematic, ultra-wide angles.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="feat-group">
+            <div class="feat-group-title">System Tweaks Optimizer</div>
+            <ul class="feat-list compact">
+              <li><span class="feat-icon">⬡</span><div><strong>Maximize FPS</strong><p>Unlock maximum frames.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>Core Overclock</strong><p>Force peak CPU/GPU performance.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>Zero Lag UI</strong><p>Optimize touch latency.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>Network Stabilizer</strong><p>Reduce ping spikes.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>RAM Booster</strong><p>Clear cache before launching.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>Thermal Bypass</strong><p>Prevent FPS drops from heat.</p></div></li>
+              <li><span class="feat-icon">⬡</span><div><strong>Backup / Restore</strong><p>Save and revert patches.</p></div></li>
+            </ul>
+          </div>
+
+          <div class="feat-group">
+            <div class="feat-group-title">Skin Unlocker — SKiFT & EFT Engine</div>
+            <div class="role-grid">
+              <div class="role-card"><span class="role-ico assassin">⊕</span><strong>Assassin</strong><span>High Burst</span></div>
+              <div class="role-card"><span class="role-ico fighter">⊕</span><strong>Fighter</strong><span>Durability</span></div>
+              <div class="role-card"><span class="role-ico mage">⊕</span><strong>Mage</strong><span>Magic Burst</span></div>
+              <div class="role-card"><span class="role-ico marksman">⊕</span><strong>Marksman</strong><span>Long Range</span></div>
+              <div class="role-card"><span class="role-ico tank">⊕</span><strong>Tank</strong><span>CC & Defense</span></div>
+              <div class="role-card"><span class="role-ico support">⊕</span><strong>Support</strong><span>Utility</span></div>
+            </div>
+          </div>
+
+          <div class="feat-group">
+            <div class="feat-group-title">Battle Effects Mod</div>
+            <ul class="feat-list compact">
+              <li><span class="feat-icon">✦</span><div><strong>Recall Effects</strong><p>Epic return animation.</p></div></li>
+              <li><span class="feat-icon">✦</span><div><strong>Elimination Effects</strong><p>Custom kill effect.</p></div></li>
+              <li><span class="feat-icon">✦</span><div><strong>Battle Emotes</strong><p>Exclusive stickers.</p></div></li>
+              <li><span class="feat-icon">✦</span><div><strong>Respawn Effects</strong><p>New look on respawn.</p></div></li>
+              <li><span class="feat-icon">✦</span><div><strong>Notification Effects</strong><p>Custom kill streak visuals.</p></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- VIP COLUMN -->
+        <div class="feat-col" id="vip">
+          <div class="feat-col-head vip-head">
+            <span class="tier-tag vip-tag">♛ VIP</span>
+            <h3>VIP Features</h3>
+          </div>
+
+          <div class="vip-price-card">
+            <div class="vipp-left">
+              <span class="vipp-price">$4.99</span>
+              <span class="vipp-note">one-time · lifetime access</span>
+            </div>
+            <a href="#contact" class="vipp-btn">Get VIP</a>
+          </div>
+
+          <ul class="feat-list vip-list">
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Expand Map Vision <em class="mh-tag">Map Hack</em></strong><p>Reveals enemy positions in real time.</p><div class="warn-tag">⚠ Do not use in Ranked — risk of ban</div></div></li>
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Enemy Lag</strong><p>Induce network delay on enemies.</p><div class="warn-tag">⚠ VIP exclusive</div></div></li>
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Retri Buff Damage</strong><p>Amplify retribution burn damage.</p></div></li>
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Hero Buff Damage</strong><p>Amplify physical/magical damage.</p></div></li>
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Zero Ads</strong><p>Ad-free experience.</p></div></li>
+            <li><span class="feat-icon vip-ico">◉</span><div><strong>Priority Updates</strong><p>Get new skins and patches first.</p></div></li>
+          </ul>
+
+          <div class="vip-note-card">
+            <p>VIP is a one-time purchase. Contact <strong>@wanitomodzz</strong> on Telegram.</p>
+            <a href="https://t.me/wanitomodzz" target="_blank" rel="noopener" class="tg-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM8.12 12.65l-2.7-1.06c-.58-.23-.58-.55.12-.78l8.17-3.12c.58-.23.95.1.72.7l-1.5 4.8c-.16.5-.4.6-.78.35l-2.18-1.6-1.05 1.02c-.12.12-.23.12-.38 0l.06-2.3 3.4-3.07c.17-.16.05-.25-.13-.14l-4.5 2.84z"/></svg>
+              Message on Telegram
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TUTORIALS SECTION -->
+  <section id="tutorials">
+    <div class="container">
+      <div class="sec-label">03 — Tutorials</div>
+      <h2 class="sec-title">Video tutorial</h2>
+      <p class="sec-sub">Watch the patching guide below. Replace the video URL with your own GitHub raw link.</p>
+      <div class="tutorials-grid single">
+        <div class="tut-card">
+          <div class="tut-num">01</div>
+          <h3>Patching Skins & Config</h3>
+          <div class="video-box">
+            <video src="https://raw.githubusercontent.com/WanitoModz040126/MLBB-SKIN-PATCHER/main/tutorial_patch.mp4" controls preload="none" loading="lazy"></video>
+          </div>
+          <ol class="tut-steps">
+            <li><strong>Close MLBB</strong> completely before patching.</li>
+            <li>Go to <strong>Config tab</strong> and select a Drone View preset.</li>
+            <li>Go to <strong>Skin tab</strong>, select hero category and skin.</li>
+            <li>Wait for <em>Patch Success</em> notification.</li>
+            <li>Launch MLBB normally — patches take effect.</li>
+            <li>Use <strong>Backup / Restore</strong> if a game update resets patches.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq">
+    <div class="container">
+      <div class="sec-label">04 — FAQ</div>
+      <h2 class="sec-title">Frequently asked</h2>
+      <div class="faq-grid">
+        <div class="faq-item"><h4>Which Android versions are supported?</h4><p>Android 10 through 15. No root required.</p></div>
+        <div class="faq-item"><h4>Do I need to root my device?</h4><p>No, works without root.</p></div>
+        <div class="faq-item"><h4>Will this get my account banned?</h4><p>Free features low risk. VIP combat features (map hack, enemy lag) higher risk — avoid Ranked mode.</p></div>
+        <div class="faq-item"><h4>How do I remove patches?</h4><p>Use <strong>Backup / Restore</strong> in Config tab.</p></div>
+        <div class="faq-item"><h4>Does it work after MLBB updates?</h4><p>Config files may reset. Re-apply patches.</p></div>
+        <div class="faq-item"><h4>How do I get VIP access?</h4><p>Message <strong>@wanitomodzz</strong> on Telegram or Facebook. $4.99 lifetime.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & ABOUT -->
+  <section id="contact">
+    <div class="container">
+      <div class="sec-label">05 — Contact</div>
+      <h2 class="sec-title">Get in touch</h2>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <div class="about-block">
+            <p>WanitoModz Tool is a free MLBB skin injector and config patcher. Not affiliated with Moonton. Use at your own risk.</p>
+          </div>
+          <div class="dev-block">
+            <span class="dev-label">Developer</span>
+            <span class="dev-handle">@wanitomodzz</span>
+          </div>
+          <div class="social-row">
+            <a href="#" class="soc-link">Facebook</a>
+            <a href="https://t.me/wanitomodzz" target="_blank" class="soc-link tg-soc">Telegram</a>
+            <a href="#" class="soc-link ig-soc">Instagram</a>
+          </div>
+          <div class="policy-note">
+            <strong>Usage Policy:</strong> For educational/personal exploration only. Not responsible for account bans.
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="form-card">
+            <h3>Send a message</h3>
+            <div id="form-response" class="form-response"></div>
+            <div class="field"><label>Name</label><input type="text" id="f-name" placeholder="Your name" /></div>
+            <div class="field"><label>Email</label><input type="email" id="f-email" placeholder="you@email.com" /></div>
+            <div class="field"><label>Message</label><textarea id="f-msg" rows="5" placeholder="Write your message..."></textarea></div>
+            <button id="f-submit" class="submit-btn">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">WANITO<span>MODZZ</span> <small>Tool v1.0.0</small></div>
+      <p class="footer-copy">© 2025 WanitoModz Tool by @wanitomodzz</p>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
